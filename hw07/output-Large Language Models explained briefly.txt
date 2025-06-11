@@ -1,57 +1,401 @@
- Imagine that you find a script from a short film with a scene between a person and his artificial intelligence assistant.
- The script shows the question for the artificial intelligence, but the answer disappeared.
- Suppose you have this powerful and magical machine that can take a text and make a sensible prediction of what the next word is.
- You could complete the script by inserting the text into the machine to predict the first word of the answer and then repeat the process word by word until you complete the dialogue.
- When you interact with a chatbot, this is what happens.
- An extensive language model, or LLM, is a sophisticated mathematical function that predicts what word comes next for any text.
- However, instead of predicting a word with certainty, what it does is assign a probability to all possible words.
- To build a chatbot, place a text with the interaction between a user and an assistant, add the user's question as the first part of the interaction and then make the model repeatedly predict the next word that the artificial intelligence would give, until you get an answer.
- By doing this, the result seems much more natural if the function randomly selects some less likely words.
- What this means is that, although the model itself is deterministic, the same question usually gives a different answer every time it is executed.
- Models learn to make these predictions by processing huge amounts of text.
- For example, if a human read 24 hours a day without stopping, it will be a very long day.
- If a human read 24 hours a day without stopping 24 hours a day 7 days a week, it would take more than 2,600 years to read the text used in training the GPT-3 model.
- You can think of training as the synchronication of the dials of a big machine.
- The way a language model behaves is totally determined by these values, usually called parameters or weights.
- If you change these parameters, the probabilities that the model assigns to the next word of a particular text will change.
- What makes a language model extensive is that it can have hundreds of thousands of millions of parameters.
- But no human being defines these parameters.
- Instead, they start at random, so the model only produces meaningless letters, but they are subsequently perfected from many example texts.
- A training text could have only a few words or thousands, but in any case, the way it works is by introducing all the words of that example, except the last one, and comparing the model's prediction with the true word.
- To adjust all the parameters, a algorithm called retro propagation is used, which increases the probability of the model choosing the last true word.
- When you do this for many millions of examples, the model not only begins to give better predictions about training data, but also makes more reasonable predictions about texts that it has never seen before.
- Because of the large number of parameters and the huge amount of training data, the necessary computing scale for training an LLM is amazing.
- To illustrate it, imagine that you can perform a thousand million sums and multiplications every second.
- How long do you think it would take to complete all the training operations of the largest language models?
- Do you think it would be a year or ten thousand years? The answer is much longer. It would be more than 100 million years.
- But this is only the first part of the story. This whole process is called pre-training.
- The goal of completing a text passage is different from the goal of being a good artificial intelligence assistant.
- To solve this, chatbots are subjected to another type of training called reinforcement learning with human feedback.
- Human supervisors point out useless or problematic predictions to further refine the model's parameters and thus increase the chances of offering the desired predictions.
- If we look back, this amazing amount of computing is only possible by using chips known as GPUs that are optimized to perform many parallel operations.
- But not all language models can be easily parallelized.
- Before 2017, most models processed text word for word, but a team of Google researchers presented a new model known as Transformador.
- Transformers do not read the text from beginning to end, they absorb everything at once and in parallel.
- The first step within a transformer is to associate each word with a long list of numbers.
- The reason is that computing during the training process is executed with numerical data and that is why it is necessary to code, in some way, the meaning of each word with these lists of continuous values.
- What makes Transformers unique is their dependence on a special operation called Attention.
- This operation gives all these lists of numbers the opportunity to speak to each other and refine the codified meanings depending on the context that surrounds them.
- For example, the numbers that are codified in the word bank could change depending on the context to code the most specific and precise notion of the word River.
- Transformers usually include a second type of operation known as a pre-fueled neural network, which gives the model an additional capacity to store patterns learned during training.
- All this data flows repeatedly through many iterations of these two fundamental operations.
- The idea is that each list of numbers is enriched to encode the necessary information for a precise prediction of what word follows in the text.
- In the end, to make a prediction of the next word, a final function is performed on the last vector of the sequence that already accumulates the influence of the context of the entry phrase and everything that the model learned during training.
- Again, the prediction of the model is the assignment of a probability for each possible next word.
- Although researchers design each step of the process, it is important to recognize that the resulting behavior is an emerging and spontaneous phenomenon that depends on the parameters set during training.
- This makes it incredibly difficult to determine why the model makes a particular prediction.
- What you can notice when you use language model predictions is that the words it generates are amazingly fluid, fascinating and even useful.
- The model is a very interesting and interesting model.
- It is a model that is very interesting and interesting to study.
- It is a model that is very interesting and interesting to study.
- It is a model that is very interesting and interesting to study.
- It is a model that is very interesting and interesting to study.
- If you are new here and are curious to know more details about how transformers and attention work, I have a lot of material for you.
- An option is to visit a series of videos about deep learning, where we visualize the details of attention and the other processes in a transformer.
- In addition, on my second channel I published a talk that I gave on this topic for the TNG company in Munich.
- In reality, sometimes I prefer to give an informal talk instead of making a video production, but I leave to your choice which of them you think is best to continue learning.
- Thank you for watching.
+嘿大家好 我是啾啾鞋
+Costco 會員制倉儲式量販店的巨頭
+年薪收入高達2000億美元
+工資市值排名世界前50大
+在全球有828間賣場
+28萬名員工
+復位會員人數更是高達驚人的1.1億人
+每當你走進門之前
+想著今天只要買個衛生紙和牛奶
+走出來卻發現自己推了一整車的商品
+差點塞不進後車廂
+他到底有什麼魔力
+明明連進門都要付錢
+每到假日卻還是能塞到人滿為患
+他是如何從一家西雅圖在地的賣場
+成長為一間市值高達2000億美元的巨型跨國企業呢
+時間回到1953年
+美國加州聖地牙哥的一名職業律師
+索爾普萊斯正在煩惱一件事
+他的岳母在聖地牙哥有一塊閒置空地
+卻沒有好好被利用產生現金流
+於是拜託索爾幫忙想想辦法
+索爾建議他將這塊地賣掉
+去買下另一塊地
+這塊地上面蓋了一間大型倉庫
+他告訴岳母
+會想辦法幫忙找到承租這間倉庫的租客
+索爾找上了洛杉磯一間會員制的大型賣場
+Fat Co.原本是由一羣洛杉磯的郵政員工集資創辦的
+原本是因為二戰過後
+公務員薪資停滯
+於是他們只好開始辦團購
+辦著辦著規模越來越大
+就成立了這間Fat Co.量販店
+後來漸漸將會員資格開放給一般民眾
+並且在洛杉磯開了十幾間分店
+索爾多次向Fat Co.提案
+希望他們能在聖地牙哥開分店
+並承租岳母的那間倉庫當作賣場
+不過卻屢屢被Fat Co.給打嗆
+失望的索爾煩惱得好幾天睡不著覺
+索爾起身,拿出筆記本開始算起了數字
+隔天早上他便決定自己把岳母的那間倉庫給租下來
+並透過他以前當律師時解釋了許多商業界的人脈
+募集了5萬美元
+相當於現在大約54萬美元的資金
+有這筆資金他便仿照Fat Co.的會員制模式
+在1954年創辦了自己的倉儲式量販店FatMart
+FatMart的會員費只要2美元
+大於現在的21美元
+而且只需要付一次
+而因為只有會員才能進入賣場
+索爾認為,會員的忠誠度將會是賣場衝動的關鍵
+所以他極盡所能的提供最低廉的價格給他的會員
+並且省去一切的廣告費用
+同時他也不像其他賣場一樣
+提供非常多元化的產品供顧客選擇
+而是每一種產品只有少少的幾種選項
+甚至只有一種選擇
+另外為了鞏固顧客的信任度
+FatMart還讓顧客可以無條件全額推費
+完全不會多飲句話
+這樣的經營模式讓FatMart在一年內就賺進了450萬美元
+大約相當於現在的4800萬美元
+遠遠超過當初的投資額
+並且在接下來的20年裡不斷的擴大規模
+開了45間分店
+每年營收超過3億美元
+到了1974年
+一屆來自德國的零售業巨頭
+Vietcov就注意到了這個美國的新秀
+Vietcov的創辦人
+魚果曼就向FatMart提出了併購的意圖
+Vietcov用2000萬美元獲得了FatMart66%的股權
+而索爾則繼續留任CEO
+不過在併購後不久
+新的老闆魚果就提出了不少變革的想法
+最主要的就是提高售價與拉高利潤
+因為一直以來
+FatMart為了提供會員最低的價格
+所以利潤其實一直都不高
+但這就踩到了索爾的底線
+兩個人徹底喫破臉
+但這時候公司的掌控權已經不在他手上
+索爾就這樣被解除CEO的職位
+並離開了公司
+而這時候
+FatMart裡面有一名高階主管
+就跟著索爾離開了公司
+他就是後來Costco的創辦人
+吉姆·西尼格
+吉姆從1955年就在FatMart工作
+從櫃檯收銀員一路做到了營運副總
+他一直都非常尊敬索爾
+把他當成自己的商業與人生導師
+也十分認同索爾的經營理念
+所以當索爾被踢出公司時
+他也毅然居然離開了公司
+被踢出公司的索爾
+就和兒子羅伯特跟這個德意門生吉姆
+三個人在1976年
+創立了一間新的量販店PriceClub
+PriceClub和FatMart不同的地方在於
+PriceClub主要是面向小型企業主的
+比如附近的早餐店、咖啡廳
+賣衣服的零售店、雜貨店等等
+這些小店家每次要進貨
+都得要去各個批發商那裡討價還價
+也才因為進貨量少
+而必須用高價進貨
+但PriceClub則是
+只要你付了會員費
+就可以保證跟他們進貨的價格維持一致
+所以很快的就吸引了不少的小型企業主加入
+一年只要付25美元
+到現在的127美元
+就可以加入會員取得優惠價格
+並且同樣讓顧客可以無條件退貨
+後來PriceClub很快的也把會員資格
+擴大到一般消費者
+隨著PriceClub的成功
+漸漸就威脅到了原本的FatMart
+這讓FatMart新老闆的一連串失敗改革
+導致顧客大量流失
+最終在1982年宣佈倒閉
+也讓PriceClub成為了全美唯一的
+會員制倉儲式量販店
+不過很快的新的競爭隊早就出現了
+那就是另一家零售巨頭
+Walmart
+他們也推出了自己的會員制量販店
+SamsClub
+營運模式幾乎跟PriceClub一模一樣
+很快的就追上了PriceClub
+兩家企業互相角逐這塊市場
+與此同時一名來自西雅圖的律師
+傑夫·布洛特曼
+有了一個新的商業點子
+他在歐洲旅遊的時候
+注意到法國的商場模式
+Hypermarket
+也就是我們熟知的加勒福
+生意非常好
+他想把這樣的商業模式複製到美國
+於是他開始四處打聽
+有沒有零售業的專家能幫助他
+這時候吉姆·席尼格就被他注意到了
+他馬上飛回美國跟吉姆見面
+他提出了量販店的點子
+吉姆只跟他講了PriceClub的會員制經營模式
+兩個人一拍即合
+於是吉姆決定離開PriceClub
+和傑夫兩個人一起創業
+他們將公司取名作Costco
+並且比PriceClub更著重在一般消費者
+商場引進了大量的日用品
+生鮮食品
+服飾
+體育用品等等
+所有得知吉姆要離開的消息
+雖然感到難過
+但還是祝福他創業成功
+於是吉姆和傑夫的第一家Costco
+就在1983年在西雅圖開張了
+這其中還有一個有趣的小故事
+就是吉姆和傑夫原本其實找不到金主
+靠自己的資金快撐不下去了
+有一次傑夫搭飛機前往西雅圖的時候
+飛機被閃電擊中
+必須在舊金山擴張
+而就在傑夫在舊金山等他轉機的時候
+無意間和同一個航班的旅客聊起天來
+這個人就是弗萊德·保羅塞爾
+他是一名風險投資人
+同時也是星巴克的早期投資者
+他和傑夫談過以後
+對Costco的生意十分有興趣
+並表示願意投資750萬美元
+這對傑夫和吉姆來說
+簡直是酒汗風乾淋啊
+幫助Costco撐過了創業初期的階段
+接著很快的就擴張到三間分店
+並且在1985年掛牌上市
+同年營業額超過10億美元
+用破了10年
+量販業市場在美國持續蓬勃發展
+而像這種會員制的倉儲式量販店
+則呈現了三強鼎立的狀態
+最大的就是沃馬旗下的SamsCup
+而且母公司沃馬本身也是零售業龍頭
+財力可以說遠遠超過PriceCup和Costco
+這時候市場上開始傳出消息
+SamsCup由意併購PriceCup或Costco其中一家公司
+這個消息傳到索爾和吉姆的耳裡
+讓他們感到十分害怕
+因為如果併購的是自家公司
+他們將會失去公司的主導權
+而如果併購的是對方的公司
+那就代表自家公司將難以存活下去
+為了避免這種情況
+PriceCup的索爾和羅伯特父子
+跟Costco的吉姆和傑夫四個人討論後決定
+將PriceCup和Costco合併一起對抗SamsCup的競爭
+於是在1993年
+兩間公司正式合併為PriceCostco公司
+雖然說三家公司一直處於競爭狀態
+但其實三間公司的創辦人
+一直都有一種亦失亦有的關係
+PriceCup的索爾親手再配了Costco的吉姆
+教導他做生意的理念
+而Walmart的創辦人山姆沃頓也公開表示
+他的許多商業經營方式都是參考索爾的
+甚至像Walmart的命名方式
+就是學索爾當年的FakeMart
+旗下的SamsCup也是學PriceCup
+Costco則又在會員制
+倉儲式量販店這個模式上面
+進一步發展出他們的獨特經營之道
+比如他們將訂你的商品區分為
+所謂的Trigger和Treasure
+Trigger就是觸發你前往Costco的那些商品
+通常是一些地區日用品或是消耗品
+比如衛生紙、洗衣精、尿布、玉米片、牛奶這些
+通常你會想到要去Costco
+都是注意到家裡的這些備品用完了對吧
+這些商品大概佔了Costco所有商品的四分之三
+另外四分之一則是所謂的Treasure
+也就是讓你在逛的過程中自己去發現的
+你出門前根本沒想過要買那些東西
+而且這些商品通常都是限時限量
+過了時間或賣完了就沒了
+創造出一種啊好啦就一起買啦的那種擊破感
+他們在店內也幾乎沒有什麼指引的牌子
+目的就是要創造出尋寶的那種感覺
+所以去Costco的顧客幾乎都會每個走道逛過一遍
+也就是在這個過程中讓你買到Trigger的商品以外
+也自己去發現那些Treasure的商品
+讓購物的體驗是有趣的
+他們的商品成立也針對這個尋寶過程設計
+像是一進門一定會先看到那些Treasure的商品
+電視、家電、珠寶、3C產品等等的
+比較酷炫吸引目光的東西
+然後像衛生紙、礦泉水這些一定被塞在罪裡面
+因為你一定得買那些東西嘛
+所以你一定會走到罪裡面
+生鮮食品也會擺在罪裡面
+因為如果一進門就拿生鮮食品
+顧客心裡就會開始擔心
+欸這些冷凍冷藏的東西放太久不好啊
+就有時間壓力嘛
+而且如果這個時候推車都被Trigger的商品佔滿了
+就沒空間放Treasure了嘛
+所以他們的商品沉澱也是有一套策略的
+並且每樣商品都只有少少的集中品牌選擇
+讓消費者不用花太多心力去選
+看到就直接放進推車不需要猶豫
+除此之外Costco也有經營自由品牌
+以曾經的公司總部地點柯克蘭命名
+商場內15%的商品都是自由品牌
+這可以進一步把價格壓低
+而且就我個人跟很多網友的經驗分享
+他們的自由品牌
+跟其他量分業者的自由品牌相比
+品質算是很不錯的
+尤其是衛生紙
+很多真的是一事成足顧啊
+他們光針對衛生紙
+就有專門的研發跟品款部門
+這是他們每年銷量最高的商品
+創辦人吉姆一年會花200天的時間
+搭著私人飛機飛往全世界各地的門市
+並且一點一點的改良
+提高商場的效率
+比如他將圓筒型的堅果包裝盒改成方形的
+這樣單位面積就可以放進更多盒堅果
+光這樣子一年就可以省下400輛卡車的運費
+並且一個產品也只有一種定量的包裝
+因為吉姆認為
+如果有大中小包裝
+很多人就會保守選擇小包裝
+雖然通常小包裝單價比較高
+但他希望的是
+提高消費者一次購物消費金額的總價
+因為他知道
+忠實的顧客總是會回來的
+並且消費者也會知道
+一次買大量單價比較低
+所以乾脆就一次買齊了
+以上種種的體驗設計
+讓Costco的會員序卡率高到90%
+說明顧客一旦成為會員後
+就真的非常死忠啊
+黏著度非常高
+當然也因為壓低價格的商業模式
+所以Costco一直以來毛利率都不高
+開頭說Costco年營收高達2000億美元
+像2021年全年營收1959億
+但其實淨利只有50.79億
+而且其中有38.77億美元
+都是來自會員費
+佔比高達76%
+在此之前更是幾乎每年都高達90%
+可以說Costco賣商品本身幾乎是沒賺錢的
+而是靠收會員費
+提供會員如何找到CP值最高的商品
+這項服務來賺錢
+從這點出發你就能理解
+為什麼Costco會提供很多其他賣場沒有的服務
+像是配眼鏡、配助聽器
+提供旅遊行程
+甚至在國外還提供顧客、房貸、健保等等的
+這些其實都不賺錢
+但都是在提供會員服務
+目的是為了要留住會員
+把會員們的生活和Costco徹底綁在一起
+至於賣商品只要能大便或小賺就好了
+除了都會員好以外
+吉姆也很重視員工的福祉
+Costco的員工福利待遇
+相比同行都算是非常好的
+我一開始查資料的時候
+想說是不是隻是公關文章才這樣寫
+或是隻有美國員工纔有這樣的福利
+但其實在PTT或是Dcard上面
+都會找到不少討論的文章
+當然那不會是讓你大富大貴的工作
+臨時招聘的員工可能排班也比較少
+但正職員工的薪資在同行裡面確實是比較高的
+並且按照工作時數
+電腦會自動調薪
+最基層的最高也可以到5、6萬元
+並且很穩定
+所以也很少看到會有開職缺的
+算是鐵飯碗類型的工作
+只是我有時候可能會遇到一些傲客的事
+不過Costco當然也有一些為人詬病的地方
+最主要是結帳體驗
+有時候假日真的會排到生氣
+有一次我在Costco光排結帳就排了40分鐘
+而且因為隊伍太長
+是在貨架區那邊
+所以還在逛的顧客
+就跟排隊結帳的顧客全部混在一起
+就這樣Costco的推車就超大一臺
+所以亂上加亂
+所有人就卡成一團
+另外還有也是商品份量真的太多
+尤其是食物
+像我們這種典型的三連小家庭
+就真的很難下決定買一樣東西
+因為鐵錠喫不完
+很多時候想想
+還是去超市買好了
+雖然是單價比較高
+但至少不浪費
+也不佔冰箱空間
+不然就是要至少兩個小家庭去
+纔可以分掉
+但像肉類這些東西
+又沒辦法當場分就很麻煩
+另外最近這幾年
+在臺灣的Costco
+也慢慢開始有人覺得
+好像沒有以前那麼划算了
+獨特性的商品也越來越少
+還有人戲稱說
+Costco就是要收會員費的加勒福
+不過喜歡的還是很喜歡
+在臉書上看到很多Costco的相關社團
+有很多人分享心得
+最近就有很多人去買那個
+超大的摩艾石像
+一尊只要4179元
+之前去別人家還真的有看到
+這大概也只有Costco會賣了吧
+Costco的創辦人吉姆
+在2012年接下來執行長的位置
+由克雷格·傑利尼克繼任
+他也是早期FedMart的員工
+後來在1984年加入Costco
+一路做到營運長
+最後接任執行長
+並且希望能夠延續創辦人吉姆的願景
+另一位創辦人傑夫·波羅特曼
+則是在2017年於睡夢中忽然逝世
+享壽74歲
+在他過世前一天
+還跟2000位
+從世界各地飛來美國的Costco主管
+共進晚餐
+可以說是把一輩子都奉獻給了Costco
+以上就是Costco的發跡與成長歷史
+你常在Costco買東西嗎?
+你喜歡跟不喜歡Costco的地方在哪裡呢?
+留言在下面跟我們分享吧
+最後能喜歡我的影片的話
+記得按個讚
+可以訂閱頻道
+按下小鈴鐺
+那我們下次見啦
+掰掰

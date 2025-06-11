@@ -1,0 +1,12 @@
+0 spring day, maid dress, wind, hair accessories, smile,rem,
+10 spring day, maid dress, wind, hair accessories, smile,rem,
+20 spring day, maid dress, wind, hair accessories, smile,rem,
+30 summer day, maid dress, straw hat,rem,
+40 summer day, maid dress, straw hat,rem,
+50 summer day, maid dress, straw hat,rem,
+60 fall day, maid dress, slim jeans, wind, fallen leaves,rem,
+70 fall day, maid dress, slim jeans, wind, fallen leaves,rem,
+80 fall day, maid dress, slim jeans, wind, fallen leaves,rem,
+90 winter, maid dress, woolen hat, ear protection gloves, snowflakes,rem,
+100 winter, maid dress, woolen hat, ear protection gloves, snowflakes,rem,
+110 winter, maid dress, woolen hat, ear protection gloves, snowflakes,rem
